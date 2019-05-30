@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'training-app';
+
+  onItemClicked() {
+    window.alert('Item clicked');
+  }
+
+  showProfilePopup(user) {
+    window.alert(`${user.name} - ${user.password}`)
+  }
 }
